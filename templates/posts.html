@@ -1,0 +1,29 @@
+<div class="row">
+	<div class="col-sm-2">
+		<ul class="nav nav-pills nav-stacked">
+		  <li class="active"><a href="#/">Home</a></li>
+		  <li class="active"><a href="#">Add Posts</a></li>
+		</ul>
+	</div>
+	<div class="col-sm-10">
+		<div ng-controller="postsCtrl">
+			<table class="table table-striped table-hover ">
+			  <thead>
+			    <tr>
+			      <th>Title</th>
+			      <th>Description</th>
+			      <th>Date</th>
+			      <th>Action</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr ng-repeat="x in posts.data">
+			    	<td> {{ x.title }}</td>
+			    	<td> {{ x.description }}</td>
+			    	<td> {{ x.published_on }}</td>
+			    </tr>
+			</tbody>
+			</table>
+		</div>
+	</div>
+</div>
