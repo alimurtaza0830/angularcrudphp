@@ -6,9 +6,11 @@
 		</ul>
 	</div>
 	<div class="col-sm-10">
-		<h4 class="col-sm-offset-5">VIEW POST</h4>
+		<h4 class="col-sm-offset-2">VIEW POST</h4>
 		<div ng-controller="postsCtrl">
-
+			<h4>{{posts.title}}</h4>
+			<p>{{posts.description}}</p>
+			<p>Published on: {{posts.published_on}}</p>
 		</div>
 	</div>
 </div>

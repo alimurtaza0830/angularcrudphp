@@ -1,7 +1,8 @@
 <?php 
 	include_once('config.php');
-	$id = $_GET['id'];
 	
+	$id = $_GET['id'];
+
 	if(!empty($id))
 		{
 			$output = arrary();
@@ -14,6 +15,7 @@
 						}
 					echo json_encode($output);
 				}
+			mysqli_close($conn);
 		}
-	mysqli_close($conn);
+	
  ?>
